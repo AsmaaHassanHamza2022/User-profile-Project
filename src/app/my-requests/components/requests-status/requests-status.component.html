@@ -1,1 +1,45 @@
-<p>requests-status works!</p>
+<section class="Requests-state my-5">
+  <div class="container">
+      <div class="row">
+        <div class=" col-md-3 col-sm-12  my-3  ">
+          <div class=" item w-75 m-auto d-flex align-items-center ">
+            <div class="div"><span class="number">40</span></div>
+            <div class="div mx-3"><span>Total <br/> Requests</span></div>
+          </div>
+        </div>
+        <div class=" col-md-3 col-sm-12  my-3  ">
+          <div class=" itemwithspin w-75 m-auto d-flex align-items-center ">
+            <div class="div d-flex justify-content-center align-items-center position-relative">
+              <mat-progress-spinner color="warn"diameter="50" strokeWidth="4" [value]="pendingValue" mode="determinate"></mat-progress-spinner>
+              <div  style="position:absolute; font-size: 18px; z-index: -1;">16</div>  
+             </div>
+            <div class="div mx-3"><span>Pending</span></div>
+          </div>
+
+        </div>
+
+        <div class=" col-md-3 col-sm-12  my-3  ">
+          <div class=" itemwithspin w-75 m-auto d-flex align-items-center ">
+            <div class="div d-flex justify-content-center align-items-center position-relative">
+              <mat-progress-spinner color="warn" diameter="50" strokeWidth="4" [value]="returnValue" mode="determinate"></mat-progress-spinner>
+              <div  style="position:absolute; font-size: 18px; z-index: -1">24</div>  
+             </div>
+            <div class="div mx-3"><span>Returned</span></div>
+          </div>
+
+        </div>
+        
+        <div class=" col-md-3 col-sm-12  my-3  ">
+          <div class=" item w-75 m-auto d-flex align-items-center ">
+            <div class="div"><span class="number">0</span></div>
+            <div class="div mx-3 p-2"><span>Closed</span></div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+    
+
+
+</section>

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RequestsStatusComponent implements OnInit {
 
+  returnValue:number=70;
+  pendingValue:number=40;
   constructor() { }
 
   ngOnInit(): void {

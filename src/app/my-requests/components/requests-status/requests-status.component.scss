@@ -1,0 +1,23 @@
+.item{
+    border:1px solid #eee;
+    border-radius: 10px;
+    padding: 30px;
+
+}
+.item .number{
+    font-weight: bolder;
+    font-size: 2rem;
+}
+.mat-progress-spinner {
+    z-index: -1;
+}
+.mat-progress-spinner circle, .mat-spinner circle{
+   
+    stroke: #df8d3b;
+}
+.itemwithspin{
+    border:1px solid #eee;
+    border-radius: 10px;
+    padding:24px;
+}
+
