@@ -1,0 +1,24 @@
+table {
+    width: 100%;
+  }
+  .pagniation i{
+    font-size: 1.2rem;
+    color: #cbc0c0;
+  }
+.pagniation div{
+
+    border:1px solid #f6ba00;
+    border-radius: 50%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#f6ba00;
+}
+
+.Active-pagniation{
+    background-color: #f6ba00;
+    color:#fff !important;
+    font-weight: bolder;
+}

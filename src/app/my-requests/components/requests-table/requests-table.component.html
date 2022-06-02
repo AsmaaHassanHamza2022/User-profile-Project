@@ -1,1 +1,25 @@
-<p>requests-table works!</p>
+<section class="Application-table my-5">
+    <div class="container">
+        <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">
+            <ng-container *ngFor="let column of columns" [matColumnDef]="column.columnDef">
+              <th mat-header-cell *matHeaderCellDef>
+                {{column.header}}
+              </th>
+              <td class="py-3" mat-cell *matCellDef="let row">
+                {{column.cell(row)}}
+              </td>
+            </ng-container>
+          
+            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+          </table>
+    </div>
+
+    <div class="pagniation  w-25 m-auto  d-flex justify-content-between align-items-center my-3 ">
+        <i class="fa-solid fa-angle-left" (click)="pre()"></i>
+        <div  (click)="ChangeData($event)" class="number" *ngFor="let num of pagesNumberArray">{{num}}</div>
+        
+        <i class="fa-solid fa-angle-right" (click)="next()" ></i>
+    </div>
+
+</section>

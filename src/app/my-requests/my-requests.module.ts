@@ -6,6 +6,7 @@ import { RequestsTableComponent } from './components/requests-table/requests-tab
 import { RequestsStatusComponent } from './components/requests-status/requests-status.component';
 import { RequestsPageComponent } from './components/requests-page/requests-page.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatTableModule} from '@angular/material/table';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
   imports: [
     CommonModule,
     MyRequestsRoutingModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatTableModule
   ]
 })
 export class MyRequestsModule { }
