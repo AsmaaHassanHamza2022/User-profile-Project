@@ -1,0 +1,89 @@
+.footer-bgcolor{
+    background-color:#fadb80;
+}
+.footer-headColor{
+    color:#df8d3b;
+}
+footer .container{
+    overflow: auto;
+}
+footer h3{
+    font-weight: bold;
+    font-size:20px;
+   
+}
+.SubScriptionFeild input,
+.SubScriptionFeild button{
+border-radius: 20px;
+}
+
+.related-Links ul{
+    padding:0px;
+}
+.related-Links ul  li{
+    margin-bottom: 10px;
+}
+.related-Links ul  li a,
+.related-Links .locationMap p a
+{
+    color:#484649;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.related-Links ul  li a i{
+    margin-right:5px;
+}
+
+.line{
+    width:1px ;
+    height:100%;
+    background-color: #d3d1d1;
+
+}
+.social-Media-Contact .icons {
+    border:1px solid #484649;
+    border-radius: 20px;
+    padding:7px;
+    margin:20px auto;
+    text-align: center;
+    width:30%;
+}
+.social-Media-Contact .icons span{ 
+    color: #484649;
+    font-size: 18px;}
+.social-Media-Contact .icons img{
+    width:30px;
+    height:30px;
+    margin-left:10px;
+    border-radius: 50%;
+}
+.term-color{
+    color:#00587e;
+}
+
+.copyR-bgColor{
+  background-color: #00587e;
+  }
+
+// media Quiery to handle some cases in responsive
+
+  @media (max-width:767px) {
+    .related-Links >div{
+        margin-bottom:20px;
+
+    }
+    .related-Links ul  li {
+        text-align: center;
+    }
+    .social-Media-Contact .icons{
+        width:65%;
+    }
+  }
+
+  @media (max-width:991px) and (min-width:767px) {
+
+    .social-Media-Contact .icons{
+        width:40%;
+    }
+
+  }

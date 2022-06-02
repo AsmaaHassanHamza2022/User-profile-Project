@@ -1,0 +1,78 @@
+<section class="user-Details my-5">
+    <div class="container">
+        <div class="content row w-75 m-auto ">
+            <!-- this part for display ImageProfile And user Name&Pass -->
+            <div class="col-md-4 col-sm-12 first-Colum d-flex ">
+
+                <div class="div">
+                    
+                    <img (click)="handleClick()" [src]='preImagePart+targetUser.profileImage' width="30" />
+                    <input class="hidden" type="file" id="upload-file" name="upload-file" accept=".csv" ngf-max-size="2MB" (change)="addAttachment($event)">
+
+                    <h2>{{targetUser.FullName}}</h2>
+                    <h3 text-secondary>Sign In:{{targetUser.password}}</h3>
+                    <button class="btn" (click)="UpdateData(targetUser.id,targetUser)">Save Changes</button>
+                </div>
+
+            </div>
+            <!-- this first  part from user Data -->
+            <div class="col-md-4 col-sm-12 second-colum">
+               <ul type="none">
+                   <div class="div">
+                    <li>EmairatesIdNumber</li>
+                    <li><input [(ngModel)]="targetUser.EmairatesIdNumber" class="form-control" type="text"/></li>
+                   </div>
+                   <div class="div">
+                    <li>Nationality</li>
+                    <li>
+                        <select [(ngModel)]="targetUser.Nationality"  class="form-control">
+                            <option  *ngFor="let nat of nationalityList">{{nat}}</option>
+                        </select>
+                    </li>
+                   </div>
+                   <div class="div">
+                    <li>phone</li>
+                    <li><input [(ngModel)]="targetUser.phone" class="form-control" type="text"/></li>
+                   </div>
+                   <div class="div">
+                    <li>Emirate</li>
+                    <li><input [(ngModel)]="targetUser.Emirate" class="form-control" type="text"/></li>
+                   </div>
+                   
+               </ul>
+                
+            </div>
+            <!-- this last part from user Data -->
+            <div class="col-md-4 col-sm-12">
+                <ul type="none">
+                    <div class="div">
+                     <li>Full Name</li>
+                     <li><input [(ngModel)]="targetUser.FullName" class="form-control" type="text"/></li>
+                    </div>
+                    <div class="div">
+                     <li>Email</li>
+                     <li><input [(ngModel)]="targetUser.Email" class="form-control" type="text"/></li>
+                    </div>
+                    <div class="div">
+                     <li>Gender</li>
+                     <li>
+                        <select [(ngModel)]="targetUser.Gender"  class="form-control">
+                            <option>Male</option>  
+                            <option>Female</option>  
+                        </select>
+                     </li>
+                    </div>
+                    <div class="div">
+                     <li>Age</li>
+                     <li><input [(ngModel)]="targetUser.Age" class="form-control" type="text"/></li>
+                    </div>
+                    
+                </ul>
+                 
+            </div>
+        </div>
+    </div>
+
+
+</section>
+

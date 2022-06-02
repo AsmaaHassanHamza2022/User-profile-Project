@@ -1,0 +1,31 @@
+.logooes .container div{
+    width:20%;
+}
+.bg-header{
+    background-color:#f6ba00;
+  
+}
+.bg-header a{
+    color:#484649;
+}
+.bg-header a:hover{
+    font-weight: bolder;
+    transform: scale(1.1);
+}
+
+.navbar-toggler:active,
+.navbar-toggler:focus
+{
+ box-shadow: none;   
+// outline: none !important;
+// border-color: transparent !important;
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+
+.hide{
+    display:none !important ;
+}

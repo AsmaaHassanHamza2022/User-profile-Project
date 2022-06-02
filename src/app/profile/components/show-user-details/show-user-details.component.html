@@ -1,0 +1,66 @@
+<section class="user-Details my-5">
+    <div class="container">
+        <div class="content row w-75 m-auto ">
+            <!-- this part for display ImageProfile And user Name&Pass -->
+            <div class="col-md-4 col-sm-12 first-Colum d-flex ">
+
+                <div class="div">
+                    <img [src]='preImagePart+ourUser.profileImage' width="30" />
+                    <h2>{{ourUser.FullName}}</h2>
+                    <h3 text-secondary>Sign In:{{ourUser.password}}</h3>
+                    <button (click)="EditData(ourUser)"   class="btn ">Edit Profile</button>
+                </div>
+
+            </div>
+            <!-- this first  part from user Data -->
+            <div class="col-md-4 col-sm-12 second-colum">
+               <ul type="none">
+                   <div class="div">
+                    <li>EmairatesIdNumber</li>
+                    <li>{{ourUser.EmairatesIdNumber}}</li>
+                   </div>
+                   <div class="div">
+                    <li>Nationality</li>
+                    <li>{{ourUser.Nationality}}</li>
+                   </div>
+                   <div class="div">
+                    <li>phone</li>
+                    <li>{{ourUser.phone}}</li>
+                   </div>
+                   <div class="div">
+                    <li>Emirate</li>
+                    <li>{{ourUser.Emirate}}</li>
+                   </div>
+                   
+               </ul>
+                
+            </div>
+            <!-- this last part from user Data -->
+            <div class="col-md-4 col-sm-12">
+                <ul type="none">
+                    <div class="div">
+                     <li>Full Name</li>
+                     <li>{{ourUser.FullName}}</li>
+                    </div>
+                    <div class="div">
+                     <li>Email</li>
+                     <li>{{ourUser.Email}}</li>
+                    </div>
+                    <div class="div">
+                     <li>Gender</li>
+                     <li>{{ourUser.Gender}}</li>
+                    </div>
+                    <div class="div">
+                     <li>Age</li>
+                     <li>{{ourUser.Age}}</li>
+                    </div>
+                    
+                </ul>
+                 
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
