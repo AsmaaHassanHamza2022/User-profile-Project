@@ -7,6 +7,10 @@ import { RequestsStatusComponent } from './components/requests-status/requests-s
 import { RequestsPageComponent } from './components/requests-page/requests-page.component';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatTableModule} from '@angular/material/table';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
+
+
 
 
 @NgModule({
@@ -21,7 +25,10 @@ import {MatTableModule} from '@angular/material/table';
     CommonModule,
     MyRequestsRoutingModule,
     MatProgressSpinnerModule,
-    MatTableModule
+    MatTableModule,
+    MatFormFieldModule,
+    MatSelectModule
+    
   ]
 })
 export class MyRequestsModule { }

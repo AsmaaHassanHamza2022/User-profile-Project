@@ -1,3 +1,26 @@
+<section class="table-header my-3">
+  <div class="container">
+     <div class="d-flex justify-content-between">
+        <div class="w-25">
+          <h3>My Application</h3>
+        </div>
+        <div class="w-25 ">
+        <mat-form-field appearance="fill">
+          <span matPrefix><i class="fa fa-filter text-muted mx-2" aria-hidden="true"></i></span>
+        <mat-select required (selectionChange)="FilterTable($event)">
+          <mat-option value="">All</mat-option>
+          <mat-option value="New">New</mat-option>
+          <mat-option value="transfered">transfered</mat-option>
+        </mat-select>
+        
+      </mat-form-field>
+     
+        </div>
+      </div>
+  </div>
+
+</section>
+
 <section class="Application-table my-5">
     <div class="container">
         <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 demo-table">

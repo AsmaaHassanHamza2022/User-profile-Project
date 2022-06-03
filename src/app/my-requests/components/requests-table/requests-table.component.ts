@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
 import { ApplicatioData } from '../../applicatio-data';
 import { RequestService } from '../../request.service';
 
@@ -11,10 +12,12 @@ import { RequestService } from '../../request.service';
 })
 export class RequestsTableComponent implements OnInit {
 
-  dataSource:[]=[];
+  dataSource:any;
   pagesNumber:number=0;
   pagesNumberArray:Number[]=[];
   currentPageNumber:number=0;
+
+
   constructor(private _RequestService:RequestService) {
     this.getAllData(1);
     this.pagesNumber=this._RequestService.getNumberOfTotalPages();
@@ -42,7 +45,9 @@ ChangeData(Data:any){
 
 getAllData(pageNumber:number){
   this.currentPageNumber=pageNumber;
-  this.dataSource=this._RequestService.getApplicationDataBYPage(pageNumber).result;
+  let ourData=this._RequestService.getApplicationDataBYPage(pageNumber).result;
+  this.dataSource=new MatTableDataSource(ourData);
+
 
 }
 
@@ -62,6 +67,17 @@ next(){
   }
   this.getAllData(this.currentPageNumber+1);
 }
+
+//filter function
+
+FilterTable(Data:any){
+  console.log(Data.value);
+  this.dataSource.filter=Data.value;
+
+}
+
+
+
 
 columns = [
   {

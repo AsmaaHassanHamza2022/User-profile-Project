@@ -22,3 +22,21 @@ table {
     color:#fff !important;
     font-weight: bolder;
 }
+
+
+
+// Custom Design for Filter
+
+.mat-form-field-wrapper 
+{
+  z-index: -1;
+}
+
+.mat-form-field-underline{
+  display:none;
+} 
+.mat-select{
+
+  z-index:999999;
+
+}
